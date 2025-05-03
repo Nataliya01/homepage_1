@@ -1,6 +1,6 @@
 # QA Manual Resume
 
-Welcome to my personal résumé project!  
+Welcome to my personal resume project!  
 This is a clean, responsive homepage showcasing my skills and experience as a **QA Manual**, built using **HTML** and **CSS**.
 
 ## 🌐 Live Preview

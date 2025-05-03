@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QA Manual Tester Résume &#x1F609;</title>
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+      
+      .resume {
+        max-width: 800px;
+        margin: 30px auto;
+        background: white;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+      }
+      
+      .container {
+        padding: 20px;
+      }
+      
+      .resume__block {
+        border-bottom: 1px solid #eee;
+        padding: 20px 0;
+      }
+      
+      /* Contact info styles */
+      .contact-info__header {
+        font-size: 36px;
+        margin-bottom: 5px;
+      }
+      
+      .contact-info__sub-header {
+        font-size: 20px;
+        font-weight: normal;
+        margin-bottom: 20px;
+        color: #666;
+      }
+      
+      .contact_info_container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .contact-info__block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      
+      .contact-info__item {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #555;
+        margin-right: 15px;
+      }
+      
+      .contact-info__item:hover {
+        color: #0073b1;
+      }
+      
+      .contact-info__item-icon-wrapper {
+        margin-right: 10px;
+      }
+      
+      .contact-info__item-icon {
+        height: 20px;
+        width: 20px;
+        fill: currentColor;
+      }
+      
+      /* Intro styles */
+      .intro {
+        display: flex;
+        margin: 20px 0;
+      }
+      
+      .intro__icon-wrapper {
+        margin-right: 20px;
+      }
+      
+      .intro__icon {
+        height: 30px;
+        width: 30px;
+        fill: #666;
+      }
+      
+      .intro_text {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.8;
+      }
+      
+      /* Skills styles */
+      .skills__header {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #0073b1;
+      }
+      
+      .skills__list {
+        list-style-position: inside;
+        margin-left: 20px;
+      }
+      
+      .skills__list li {
+        margin-bottom: 8px;
+      }
+      
+      /* Main info styles - modified to horizontal layout */
+      .experiences__header, 
+      .additional-info__education-header, 
+      .additional-info__languages-header {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #0073b1;
+      }
+      
+      .experiences__company {
+        margin-bottom: 25px;
+      }
+      
+      .experiences__company-header {
+        margin-bottom: 10px;
+      }
+      
+      .experiences__company-header-durability {
+        font-size: 14px;
+        color: #777;
+      }
+      
+      .experiences__company-header-name {
+        font-size: 18px;
+        margin-top: 5px;
+      }
+      
+      .experiences__company-project-role {
+        font-size: 16px;
+        font-weight: bold;
+        color: #555;
+      }
+      
+      .experiences__company-project-name {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: normal;
+        font-style: italic;
+      }
+      
+      .experiences__company-project-responsibilities {
+        list-style-position: inside;
+        margin-left: 20px;
+      }
+      
+      .experiences__company-project-responsibilities li {
+        margin-bottom: 5px;
+      }
+      
+      /* Additional info styles */
+      .additional-info__section {
+        margin-bottom: 30px;
+      }
+      
+      .additional-info__education-university-durability {
+        font-size: 14px;
+        color: #777;
+      }
+      
+      .additional-info__education-university-speciality {
+        font-size: 16px;
+        margin-top: 5px;
+      }
+      
+      .additional-info__education-university-name {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 15px;
+      }
+      
+      .additional-info__languages-item {
+        margin-bottom: 8px;
+      }
+      
+      /* Education and Languages sections in columns */
+      .education-languages-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+      }
+      
+      .education-section, .languages-section {
+        flex: 1;
+      }
+      
+      .additional-info__languages-header {
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+      
+      /* Hobbies styles */
+      .hobbies {
+        margin-top: 10px;
+      }
+      
+      .hobbies p {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="resume">
+        <div class="container">
+          <!-- Contact Info -->
+          <div class="resume__block">
+            <h1 class="contact-info__header">Nataliya Marchenko</h1>
+            <h3 class="contact-info__sub-header">QA Manual</h3>
+
+            <div class="contact_info_container">
+              <div class="contact-info__block">
+                <a href="mailto:nataly.m0123@gmail.com" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>nataly.m0123@gmail.com</span>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/nataliiya-marchenko/" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9
+                        480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4
+                        416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9
+                        96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5
+                        38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9
+                        27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5
+                        62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                        ></path>
+                    </svg>
+                  </div>
+                  <span>linkedin.com/in/nataliiya-marchenko</span>
+                </a>
+                <a href="https://t.me/nataliyamarch" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                      <path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path>
+                    </svg>
+                  </div>
+                  <span>@nataliyamarch</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Intro Section -->
+          <div class="resume__block">
+            <div class="intro">
+              <div class="intro__icon-wrapper">
+                <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7
+                    24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0
+                    26.5 21.5 48 48 48h128c26.5 0 48-21.5
+                    48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64
+                    64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0
+                    103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0
+                    48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="intro_text">
+                Manual QA Engineer with expertise in API testing, SQL, and Python. Passionate about ensuring the quality of software
+                and delivering seamless user experiences.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience Section -->
+          <div class="resume__block">
+            <h3 class="experiences__header">Experience</h3>
+            <div class="experiences__company">
+              <div class="experiences__company-header">
+                <span class="experiences__company-header-durability">2022-Present</span>
+                <h3 class="experiences__company-header-name">TechSolutions Inc.</h3>
+              </div>
+
+              <div class="experiences__company-project">
+                <span class="experiences__company-project-role">QA Engineer</span>
+                <h3 class="experiences__company-project-name">E-commerce Platform</h3>
+                <ul class="experiences__company-project-responsibilities">
+                  <li>Performed functional and regression testing of the web application</li>
+                  <li>Created and executed comprehensive test cases</li>
+                  <li>Conducted API testing using Postman and SoapUI</li>
+                  <li>Worked with development team to validate bug fixes</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="experiences__company">
+              <div class="experiences__company-header">
+                <span class="experiences__company-header-durability">2020-2022</span>
+                <h3 class="experiences__company-header-name">DevCraft Systems</h3>
+              </div>
+
+              <div class="experiences__company-project">
+                <span class="experiences__company-project-role">Junior QA Specialist</span>
+                <h3 class="experiences__company-project-name">Mobile Banking App</h3>
+                <ul class="experiences__company-project-responsibilities">
+                  <li>Performed manual testing on Android and iOS platforms</li>
+                  <li>Identified and documented software defects</li>
+                  <li>Participated in daily scrum meetings</li>
+                  <li>Contributed to test plan development</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+         <!-- QA Testing Skills Section -->
+<div class="resume__block">
+    <div class="skills">
+      <h3 class="skills__header">QA TESTING</h3>
+      <ul class="skills__list">
+        <li>Testing Types: Functional, Regression, UI, API (REST, GraphQL, gRPC), Performance</li>
+        <li>Test Design & Execution: Test Case Creation, Test Planning, Test Execution</li>
+        <li>Defect Management: Bug Reporting, Defect Tracking (Jira, TestRail, Mantis, TestCaseLab)</li>
+        <li>API Testing: Postman, SoapUI, REST, GraphQL, gRPC, Swagger</li>
+        <li>Static Testing & Documentation: Test Plans, Checklists, Test Reports</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Data Analysis Section -->
+  <div class="resume__block">
+    <div class="skills">
+      <h3 class="skills__header">DATA ANALYSIS</h3>
+      <ul class="skills__list">
+        <li>SQL (MySQL, PostgreSQL)</li>
+        <li>Excel (Pivot Tables, Advanced Formulas)</li>
+        <li>Python basic (Pandas, NumPy)</li>
+        <li>Data Visualization (Power BI, Tableau)</li>
+      </ul>
+    </div>
+  </div>
+
+          <!-- Tools Section -->
+          <div class="resume__block">
+            <div class="skills">
+              <h3 class="skills__header">TOOLS</h3>
+              <ul class="skills__list">
+                <li>Test Management & Issue Tracking: Jira, TestCaseLab, Mantis, TestRail</li>
+                <li>Development & Debugging: DevTools, Swagger, Git</li>
+                <li>CI/CD & Automation: Basic understanding of CI/CD</li>
+              </ul>
+            </div>
+          </div>
+          
+           <!-- Education and Languages Sections in columns -->
+           <div class="resumeblock education-languages-container">
+            <div class="education-section">
+              <h3 class="additional-infoeducation-header">Education</h3>
+              <div class="additional-infoeducation-university">
+                <span class="additional-infoeducation-university-durability">1997-2003</span>
+                <h3 class="additional-infoeducation-university-speciality">Publishing and Editing</h3>
+                <p class="additional-infoeducation-university-name">Igor Sikorsky KPI</p>
+                <div class="additional-info__education-university">
+                    <span class="additional-info__education-university-durability">2023</span>
+                    <h3 class="additional-info__education-university-speciality">QA Manual Technical PRO</h3>
+                    <p class="additional-info__education-university-name">Hillel IT</p>
+                  </div>
+                  <div class="additional-info__education-university">
+                    <span class="additional-info__education-university-durability">2023</span>
+                    <h3 class="additional-info__education-university-speciality">QA Trainee</h3>
+                    <p class="additional-info__education-university-name">QATestLab</p>
+                  </div>
+                  <div class="additional-info__education-university">
+                    <span class="additional-info__education-university-durability">2024</span>
+                    <h3 class="additional-info__education-university-speciality">Data Analysis</h3>
+                    <p class="additional-info__education-university-name">GoIT</p>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="languages-section">
+              <h3 class="additional-info__languages-header">Languages</h3>
+              <p class="additional-info__languages-item">English (Professional)</p>
+              <p class="additional-info__languages-item">Ukrainian (Native)</p>
+              <p class="additional-info__languages-item">Spanish (Basic)</p>
+            </div>
+          </div>
+
+          <!-- Hobbies Section -->
+          <div class="resume__block">
+            <div class="hobbies">
+              <h3 class="skills__header">Hobbies & Fun</h3>
+              <p>Enjoy exploring new testing tools, automating small tasks in Python, hiking, and good coffee ☕️</p>
+              <p>"Bug hunter by day, storyteller by night." 🐞📖</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
